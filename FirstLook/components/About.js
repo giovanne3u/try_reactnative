@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, StyleSheet, ActivityIndicator } from 'react-native'
+import {View, Text, StyleSheet } from 'react-native'
 
 export default class About extends React.Component{
 
@@ -10,7 +10,6 @@ export default class About extends React.Component{
 				<Text>
 					This app has been made by Hugo Torzuoli from Grafikart Tutorial :)
 				</Text>
-				<ActivityIndicator style={style.spaced} color="#FF0000" size="large" animated={true}/>
 			</View>
 		)
 	}
@@ -25,8 +24,5 @@ const style = StyleSheet.create({
 	},
 	container:{
 		margin:20
-	},
-	spaced:{
-		margin:10
 	}
 })
