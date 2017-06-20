@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { TabNavigator } from 'react-navigation'
 
 import About from './components/About'
@@ -14,7 +14,10 @@ const Tabs = TabNavigator({
 export default class App extends React.Component {
   render() {
     return (
-        <Tabs/>
+        <View style={{flex:1}}>
+            <StatusBar hidden={true}/>
+            <Tabs/>
+        </View>
     );
   }
 }
