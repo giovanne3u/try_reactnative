@@ -9,6 +9,18 @@ import Search from './components/Search'
 const Tabs = TabNavigator({
     Search: { screen: Search},
     About: { screen: About}
+}, {
+    // Default on iOS
+    tabBarPosition: 'bottom',
+    tabBarOptions:{
+        showIcon: true,
+        showLabel: true,
+        style:{
+            backgroundColor: "#A2273C",
+            borderTopWidth:1,
+            borderColor: "#3F101C"
+        }
+    }
 })
 
 export default class App extends React.Component {
